@@ -10,7 +10,7 @@ RUN mkdir $APP_HOME
 WORKDIR $APP_HOME
 
 RUN gem install bundler:2.1.2
-ADD Gemfile* $APP_HOME/
+ADD ./Gemfile* $APP_HOME/
 RUN bundle config set without 'development test'
 RUN bundle install
 
