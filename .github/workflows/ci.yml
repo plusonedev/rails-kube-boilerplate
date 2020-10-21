@@ -49,7 +49,7 @@ jobs:
       - name: Publish to Registry
         uses: elgohr/Publish-Docker-Github-Action@master
         with:
-          name: docker.pkg.github.com/plusonedev/boilerplate/boilerplate
+          name: docker.pkg.github.com/plusonedev/rails-kube-boilerplate/rails-kube-boilerplate
           username: plusonedev
           password: ${{ secrets.DOCKER_GITHUB_PASSWORD }}
           registry: docker.pkg.github.com
